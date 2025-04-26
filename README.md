@@ -20,7 +20,7 @@ Banking institutions rely on targeted marketing campaigns to promote term deposi
 - Reduced operational costs
 - Better management of human and time resources
 
-The objective was to create a predictive model to assist marketing teams in prioritizing high-probability customers. 
+The objective was to create a predictive model to assist marketing teams in prioritizing high-probability customers who would make a term deposit. By accurately identifying potential subscribers, the models aim to optimize **marketing campaign efficiency**, enabling better targeting of resources (e.g., time, workforce, and outreach efforts). 
 
 ---
 
