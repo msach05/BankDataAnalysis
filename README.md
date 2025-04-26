@@ -4,7 +4,6 @@
 This project explores the prediction of a client's likelihood to subscribe to a term deposit following a bank's telemarketing campaign. We used multiple machine learning models (Logistic Regression, K-Nearest Neighbors, Decision Tree, and Support Vector Machine) to identify key client characteristics affecting subscription success. Grid search and cross-validation were employed to optimize models. Our findings can help the organization to target likely subscribers more efficiently, reducing costs and increasing marketing success rates.
 
 - **Final Jupyter Notebook**: [BankingDataAnalysisFinal.ipynb](./BankingDataAnalysisFinal.ipynb)
-- **Dataset Source**: [Moro et al., 2014](http://dx.doi.org/10.1016/j.dss.2014.03.001)
 
 ---
 
@@ -45,12 +44,26 @@ The objective was to create a predictive model to assist marketing teams in prio
 
 ## Key Findings
 
-**Top Features (Logistic Regression):**
-- `emp.var.rate`
-- `month_mar`
-- `cons.price.idx`
-- `contact_telephone`
-- `poutcome_success`
+### Top Features Impacting Logistic Regression Predictions (Simplified Explanation)
+
+The most important features influencing the Logistic Regression model predictions are:
+
+- **Employment Variation Rate (`emp.var.rate`)**  
+  A higher (more positive) employment variation rate means better economic conditions. When employment conditions improve, people might feel financially secure and less motivated to lock their money into long-term deposits — leading to a lower likelihood of subscribing.
+
+- **Contact Month - March (`month_mar`)**  
+  If the client was contacted in March, they were more likely to subscribe. This could be because March is early in the year, when people are planning their finances, paying taxes, or considering savings options.
+
+- **Consumer Price Index (`cons.price.idx`)**  
+  A higher consumer price index means that the cost of goods is rising (inflation). Rising prices may push clients to seek better returns on their money, making a term deposit seem like a safer or smarter choice.
+
+- **Contact Method - Telephone (`contact_telephone`)**  
+  Clients who were contacted through a traditional telephone (landline) were less likely to subscribe. This may reflect that landline calls feel less personal or are associated with outdated marketing techniques, making clients less responsive.
+
+- **Success in Previous Campaign (`poutcome_success`)**  
+  If the client had a successful outcome in a previous campaign (e.g., said "yes" before), they are much more likely to say "yes" again. Past positive engagement builds trust and makes future subscriptions more likely.
+
+
 
 **Model Performance Summary:**
 
